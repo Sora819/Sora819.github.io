@@ -243,6 +243,11 @@ form button:hover{
         flex-basis: 100%;
         margin-top: 0.5rem;
     }
+    #myBtn{
+        border-radius: 0.5em;
+        font-size: 0.7em;
+    }
+
 }
 
 
@@ -263,7 +268,7 @@ form button:hover{
 
     #myBtn{
         border-radius: 1em;
-        font-size: 20%;
+        font-size: 0.1em;
     }
 
     nav{
@@ -289,6 +294,6 @@ form button:hover{
         column-count: 1;
     }
     .form h1{
-        font-size: 200%;
+        font-size: 2em;
     }
 }
