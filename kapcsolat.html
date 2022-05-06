@@ -26,19 +26,22 @@
         <div>
         <h1>Kapcsolatfelvétel</h1>
     
-        <form action="mailto:sora.pisti@gmail.com" method="post" enctype="text/plain">
+        <form onsubmit="return sendContact()" enctype="text/plain">
             
                 <div>
                     <label for="anonim">Névtelen</label>
-                    <input type="radio" id="anonim" name="anonim" value="Igen">
+                    <input type="radio" id="anonimigen" name="anonim" value="Igen" onclick="setAnonim()">
                     <label for="anonim">Igen</label>
-                    <input type="radio" id="anonim" name="anonim" value="Ngen">
+                    <input type="radio" id="anonimnem" name="anonim" value="Nem" onclick="setAnonim()" checked>
                     <label for="anonim">Nem</label>
+                    <hr>
                 </div>
             
+                
                 <div>
                 <label for="name">Neved</label>
                 <input type="text" id="name" name="name" required>
+                <hr>
                 </div>
 
                 <!--
@@ -51,13 +54,9 @@
                 <div>
                 <label for="message">Üzenet</label>
                 <textarea id="message" name="message" rows="6" maxlength="3000" required></textarea>
+                <hr>
                 </div>
                 
-                <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-                    async defer>
-                </script>
-                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-
                 <div>
                 <button type="submit">Elküld</button>
                 <button type="reset">Törlés</button>
@@ -73,5 +72,6 @@
     <button onclick="topFunction()" id="myBtn" title="Visszaugrás az elejére">▲</button>
 
     <script src="jscripts/scrollToTopButton.js"></script>
+    <script src="jscripts/contact.js"></script>
 </body>
 </html>

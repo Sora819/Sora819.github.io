@@ -187,6 +187,20 @@ form{
     border-radius: 0.5rem;
 }
 
+form label{
+    vertical-align: top;
+}
+
+form button{
+    border: solid;
+    border-radius: 0.5em;
+    background-color: rgb(200, 200, 200);
+    font-size: 1em;
+}
+
+form button:hover{
+    background-color: rgb(140, 140, 140);
+}
 
 /*
     Visszaugró gomb
@@ -195,17 +209,17 @@ form{
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    bottom: 2em; /* Place the button at the bottom of the page */
+    right: 2em; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: black; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    padding: 1em; /* Some padding */
+    border-radius: 0.5em; /* Rounded corners */
+    font-size: 1em; /* Increase font size */
   }
   
   #myBtn:hover {
@@ -218,6 +232,24 @@ form{
 
 /* Telefon */
 @media only screen and (max-width: 600px){
+
+    .container{
+        font-size: 50%;
+    }
+
+    nav{
+        font-size: 75%;
+    }
+
+    footer.container{
+        font-size: 25%;
+    }
+
+    #myBtn{
+        border-radius: 1em;
+        font-size: 20%;
+    }
+
     nav{
         flex-wrap: wrap;
     }
