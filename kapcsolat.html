@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - A Myers-Briggs személyiségteszt</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav" href="index.html">Kezdőlap</a>
+            <a class="nav" href="ie.html">Introvertált / Extrovertált</a>
+            <a class="nav" href="sn.html">Érzékelő / Intuitív</a>
+            <a class="nav" href="tf.html">Gondolkodó / Érző</a>
+            <a class="nav" href="jp.html">Megítélő / Észlelő</a>
+            <a class="nav here" href="kapcsolat.html">Kapcsolat</a>
+        </nav>
+    </header>
+
+    <!-- Contact form rész eleje -->
+
+    <div class="container form">
+
+        <div>
+        <h1>Kapcsolatfelvétel</h1>
+    
+        <form action="mailto:sora.pisti@gmail.com" method="post" enctype="text/plain">
+            
+                <div>
+                    <label for="anonim">Névtelen</label>
+                    <input type="radio" id="anonim" name="anonim" value="Igen">
+                    <label for="anonim">Igen</label>
+                    <input type="radio" id="anonim" name="anonim" value="Ngen">
+                    <label for="anonim">Nem</label>
+                </div>
+            
+                <div>
+                <label for="name">Neved</label>
+                <input type="text" id="name" name="name" required>
+                </div>
+
+                <!--
+                <div>
+                <label for="email" class="">E-mail címed</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+                -->
+
+                <div>
+                <label for="message">Üzenet</label>
+                <textarea id="message" name="message" rows="6" maxlength="3000" required></textarea>
+                </div>
+                
+                <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                    async defer>
+                </script>
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+
+                <div>
+                <button type="submit">Elküld</button>
+                <button type="reset">Törlés</button>
+                </div>
+
+        </form>
+        </div>
+    
+    </div>
+
+    <!-- Contact form rész vége -->
+
+    <button onclick="topFunction()" id="myBtn" title="Visszaugrás az elejére">▲</button>
+
+    <script src="jscripts/scrollToTopButton.js"></script>
+</body>
+</html>
