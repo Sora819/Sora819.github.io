@@ -231,6 +231,21 @@ form button:hover{
     Egyéb képernyő méretek
 */
 
+/* kb. tablet */
+@media only screen and (max-width: 1150px){
+    nav{
+        flex-wrap: wrap;
+    }
+    nav a:first-child{
+        margin-top: 0;
+    }
+    nav a{
+        flex-basis: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+
 /* Telefon */
 @media only screen and (max-width: 600px){
 
@@ -259,7 +274,7 @@ form button:hover{
     }
     nav a{
         flex-basis: 100%;
-        margin-top: 0.5rem;
+        margin-top: 0.2rem;
         padding: 1%;
     }
 
@@ -275,19 +290,5 @@ form button:hover{
     }
     .form h1{
         font-size: 200%;
-    }
-}
-
-/* kb. tablet */
-@media only screen and (max-width: 1150px){
-    nav{
-        flex-wrap: wrap;
-    }
-    nav a:first-child{
-        margin-top: 0;
-    }
-    nav a{
-        flex-basis: 100%;
-        margin-top: 0.5rem;
     }
 }
