@@ -51,7 +51,7 @@ img.logo{
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    width: 65vw;
+    width: 65%;
 }
 
 img{
@@ -59,7 +59,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
-    max-width: 70vw;
+    max-width: 70%;
     height: auto;
 }
 
@@ -73,7 +73,7 @@ video{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
-    width: 1rem;
+    width: 100%;
 }
 
 div.col{
@@ -203,6 +203,17 @@ form button:hover{
     background-color: rgb(140, 140, 140);
 }
 
+form input[type=checkbox]{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+form input[type=radio]{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
 /*
     Visszaugró gomb
 */
@@ -210,16 +221,16 @@ form button:hover{
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 2rem; /* Place the button at the bottom of the page */
-    right: 2rem; /* Place the button 30px from the right */
+    bottom: 1rem; /* Place the button at the bottom of the page */
+    right: 1rem; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: black; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 1rem; /* Some padding */
-    border-radius: 0.5rem; /* Rounded corners */
+    padding: 0.5rem; /* Some padding */
+    border-radius: 0.7rem; /* Rounded corners */
     font-size: 1rem; /* Increase font size */
   }
   
@@ -267,8 +278,11 @@ form button:hover{
     }
 
     #myBtn{
-        border-radius: 1rem;
-        font-size: 0.1rem;
+        bottom: 0.5rem;
+        right: 0.5rem;
+        padding: 0.2rem;
+        border-radius: 0.2rem;
+        font-size: 0.2rem;
     }
 
     nav{
@@ -294,6 +308,21 @@ form button:hover{
         column-count: 1;
     }
     .form h1{
-        font-size: 2rem;
+        font-size: 1rem;
     }
+
+    form label{
+        font-size: 0.75rem;
+    }
+
+    form input[type=checkbox]{
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    
+    form input[type=radio]{
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    
 }

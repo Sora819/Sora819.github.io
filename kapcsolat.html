@@ -14,7 +14,7 @@
             <a class="nav" href="ie.html">Introvertált / Extrovertált</a>
             <a class="nav" href="sn.html">Érzékelő / Intuitív</a>
             <a class="nav" href="tf.html">Gondolkodó / Érző</a>
-            <a class="nav" href="jp.html">Megítélő / Észlelő</a>
+            <a class="nav" href="jp.xhtml">Megítélő / Észlelő</a>
             <a class="nav here" href="kapcsolat.html">Kapcsolat</a>
         </nav>
     </header>
@@ -29,18 +29,18 @@
         <form onsubmit="return sendContact()" enctype="text/plain">
             
                 <div>
-                    <label for="anonim">Névtelen</label>
+                    <label>Névtelen :</label>
                     <input type="radio" id="anonimigen" name="anonim" value="Igen" onclick="setAnonim()">
-                    <label for="anonim">Igen</label>
+                    <label for="anonimigen">Igen</label>
                     <input type="radio" id="anonimnem" name="anonim" value="Nem" onclick="setAnonim()" checked>
-                    <label for="anonim">Nem</label>
+                    <label for="anonimnem">Nem</label>
                     <hr>
                 </div>
             
                 
                 <div>
                 <label for="name">Neved</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" maxlength="50" required>
                 <hr>
                 </div>
 
@@ -58,6 +58,12 @@
                 </div>
                 
                 <div>
+                    <label for="robocheck">Nem vagyok robot</label>
+                    <input type="checkbox" id="robocheck" name="robocheck" required></input>
+                    <hr>
+                </div>
+
+                <div>
                 <button type="submit">Elküld</button>
                 <button type="reset">Törlés</button>
                 </div>
@@ -73,5 +79,11 @@
 
     <script src="jscripts/scrollToTopButton.js"></script>
     <script src="jscripts/contact.js"></script>
+    <footer class="container">
+        <p>Készítette: Jágri István Csaba</p><br>
+        <p>Neptun kód: U04FKG</p><br>
+        <p>Dátum: 2022.05.06.</p><br>
+        <p>Forrás: <a href="https://hu.wikipedia.org/wiki/Myers–Briggs-típuselmélet">Wikipédia</a></p>
+    </footer>
 </body>
 </html>
