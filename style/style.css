@@ -105,7 +105,8 @@ div.row{
 nav a{
     text-align: center;
     margin: 0 0.5rem;
-    flex: 1 0 auto;
+    /*flex: 1 0 auto;*/
+    flex-grow: 1;
     padding: 0.5rem;
     background-color: lightgray;
     border-style: solid;
@@ -238,7 +239,7 @@ form button:hover{
     }
 
     nav{
-        font-size: 75%;
+        font-size: 50%;
     }
 
     footer.container{
@@ -253,12 +254,13 @@ form button:hover{
     nav{
         flex-wrap: wrap;
     }
-    a:first-child{
+    nav a:first-child{
         margin-top: 0;
     }
-    a{
-        flex-basis: 90%;
+    nav a{
+        flex-basis: 100%;
         margin-top: 0.5rem;
+        padding: 1%;
     }
 
     div.col{
@@ -271,6 +273,9 @@ form button:hover{
     article p{
         column-count: 1;
     }
+    .form h1{
+        font-size: 200%;
+    }
 }
 
 /* kb. tablet */
@@ -278,11 +283,11 @@ form button:hover{
     nav{
         flex-wrap: wrap;
     }
-    a:first-child{
+    nav a:first-child{
         margin-top: 0;
     }
-    a{
-        flex-basis: 90%;
+    nav a{
+        flex-basis: 100%;
         margin-top: 0.5rem;
     }
 }
