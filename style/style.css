@@ -12,6 +12,7 @@ body{
 
 article p{
     column-count: 2;
+    text-align: justify;
 }
 
 .here{
@@ -264,6 +265,10 @@ form input[type=radio]{
 
 /* Telefon */
 @media only screen and (max-width: 600px){
+
+    p{
+        word-break: break-word;
+    }
 
     .container{
         font-size: 0.5rem;
